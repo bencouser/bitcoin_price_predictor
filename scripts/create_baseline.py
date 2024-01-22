@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 df = pd.read_csv(
-    '../data/processed/bitstampUSD_1-min_data_2012-01-01_to_2021-03-31.csv',
+    '../data/processed/Bitcoin_Closing_Prices.csv',
     index_col=0)
 
 
@@ -33,7 +33,7 @@ mae = mean_absolute_error(test_copy['Close'], test_copy['naive_predictions'])
 print('MAE: %f' % mae)
 
 
-# Plotting the actual and predicted values
+# # Plotting the actual and predicted values
 # plt.figure(figsize=(10, 6))
 # plt.plot(test.index, test['Close'], label='Actual Values')
 # plt.plot(test_copy.index, test_copy['naive_predictions'],
@@ -51,9 +51,15 @@ downsampled_test = test_copy.iloc[::10]
 # Plotting the actual and predicted values with downsampling
 plt.figure(figsize=(10, 6))
 plt.plot(downsampled_test.index,
-         downsampled_test['Close'], label='Actual Values', marker='o')
-plt.plot(downsampled_test.index, downsampled_test['naive_predictions'],
-         label='Naive Predictions', color='red', linestyle='--', marker='x')
+         downsampled_test['Close'],
+         label='Actual Values',
+         marker='o')
+plt.plot(downsampled_test.index,
+         downsampled_test['naive_predictions'],
+         label='Naive Predictions',
+         color='red',
+         linestyle='--',
+         marker='x')
 plt.title('Naive Forecast vs Actual Data (Downsampled)')
 plt.xlabel('Time')
 plt.ylabel('Bitcoin Price')
