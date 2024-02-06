@@ -1,0 +1,512 @@
+Script started on Sat Jan 27 08:18:07 2024
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mbitcoin-predict[00m [32m][00m$[0m [K[?2004hccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mMachine Learning[00m [32m][00m$[0m [K[?2004hlls[?2004l
+CardioActivities	environment.yml		mnist
+bitcoin-predict		iris			testingdir
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mMachine Learning[00m [32m][00m$[0m [K[?2004hccd bitcoin-predict[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mbitcoin-predict[00m [32m][00m$[0m [K[?2004hlls[?2004l
+data			notebooks		src
+images			requirements.txt	typescript
+models			scripts
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mbitcoin-predict[00m [32m][00m$[0m [K[?2004hccd scripts[1m/[0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hlls[?2004l
+clean_data.py			extract_closing_price.py
+create_arima_model.py		generate_time_series_image.py
+create_baseline.py
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hppython create_arima_model.py[1m [0m[0m [?2004l
+Traceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 21, in <module>
+    model = ARIMA(df, order=(1, 1, 1))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/lib/python3.11/site-packages/statsmodels/tsa/arima/model.py", line 194, in __init__
+    super().__init__(
+  File "/Users/bencouser/anaconda3/lib/python3.11/site-packages/statsmodels/tsa/statespace/sarimax.py", line 509, in __init__
+    self.nobs = len(endog)
+                ^^^^^^^^^^
+TypeError: len() of unsized object
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(base) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hcconda mye   actiavte =     vate myenv[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hconda activate myenv[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hconda activate myenv[20Dpython create_arima_model.py[?2004l
+Traceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 7, in <module>
+    from statsmodels.tsa.arima.model import ARIMA
+ModuleNotFoundError: No module named 'statsmodels'
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+Traceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 8, in <module>
+    from statsmodels.tsa.arima.model import ARIMA
+ModuleNotFoundError: No module named 'statsmodels'
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hppiip   p instal l statsmodels[?2004l
+Collecting statsmodels
+  Downloading statsmodels-0.14.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (9.5 kB)
+Requirement already satisfied: numpy<2,>=1.18 in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from statsmodels) (1.26.2)
+Requirement already satisfied: scipy!=1.9.2,>=1.4 in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from statsmodels) (1.11.4)
+Requirement already satisfied: pandas!=2.1.0,>=1.0 in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from statsmodels) (2.1.4)
+Collecting patsy>=0.5.4 (from statsmodels)
+  Downloading patsy-0.5.6-py2.py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: packaging>=21.3 in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from statsmodels) (23.2)
+Requirement already satisfied: python-dateutil>=2.8.2 in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from pandas!=2.1.0,>=1.0->statsmodels) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from pandas!=2.1.0,>=1.0->statsmodels) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from pandas!=2.1.0,>=1.0->statsmodels) (2023.4)
+Requirement already satisfied: six in /Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages (from patsy>=0.5.4->statsmodels) (1.16.0)
+Downloading statsmodels-0.14.1-cp311-cp311-macosx_11_0_arm64.whl (10.1 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/10.1 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.1/10.1 MB[0m [31m3.9 MB/s[0m eta [36m0:00:03[0m[2K   [38;2;249;38;114m━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.4/10.1 MB[0m [31m6.2 MB/s[0m eta [36m0:00:02[0m[2K   [38;2;249;38;114m━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.5/10.1 MB[0m [31m13.9 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.1/10.1 MB[0m [31m21.6 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.1/10.1 MB[0m [31m21.6 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━[0m [32m5.2/10.1 MB[0m [31m23.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━[0m [32m5.2/10.1 MB[0m [31m23.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━[0m [32m5.2/10.1 MB[0m [31m23.2 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━[0m [32m7.5/10.1 MB[0m [31m22.1 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m [32m10.0/10.1 MB[0m [31m26.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.1/10.1 MB[0m [31m26.1 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading patsy-0.5.6-py2.py3-none-any.whl (233 kB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/233.9 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m233.9/233.9 kB[0m [31m22.1 MB/s[0m eta [36m0:00:00[0m
+[?25hInstalling collected packages: patsy, statsmodels
+Successfully installed patsy-0.5.6 statsmodels-0.14.1
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpip install statsmodels[23Dpython create_arima_model.py[?2004l
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+^C^C^CTraceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 26, in <module>
+    model_fit = model.fit()
+                ^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/arima/model.py", line 395, in fit
+    res = super().fit(
+          ^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 704, in fit
+    mlefit = super(MLEModel, self).fit(start_params, method=method,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 566, in fit
+    xopt, retvals, optim_settings = optimizer._fit(f, score, start_params,
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 242, in _fit
+    xopt, retvals = func(objective, gradient, start_params, fargs, kwargs,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 659, in _fit_lbfgs
+    retvals = optimize.fmin_l_bfgs_b(func, start_params, maxiter=maxiter,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 199, in fmin_l_bfgs_b
+    res = _minimize_lbfgsb(fun, x0, args=args, jac=jac, bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 365, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 285, in fun_and_grad
+    self._update_fun()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 251, in _update_fun
+    self._update_fun_impl()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 155, in update_fun
+    self.f = fun_wrapped(self.x)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 534, in f
+    return -self.loglike(params, *args) / nobs
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 939, in loglike
+    loglike = self.ssm.loglike(complex_step=complex_step, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 1001, in loglike
+    kfilter = self._filter(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 924, in _filter
+    kfilter()
+KeyboardInterrupt
+
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+^C^C^CTraceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 26, in <module>
+    model_fit = model.fit()
+                ^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/arima/model.py", line 395, in fit
+    res = super().fit(
+          ^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 704, in fit
+    mlefit = super(MLEModel, self).fit(start_params, method=method,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 566, in fit
+    xopt, retvals, optim_settings = optimizer._fit(f, score, start_params,
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 242, in _fit
+    xopt, retvals = func(objective, gradient, start_params, fargs, kwargs,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 659, in _fit_lbfgs
+    retvals = optimize.fmin_l_bfgs_b(func, start_params, maxiter=maxiter,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 199, in fmin_l_bfgs_b
+    res = _minimize_lbfgsb(fun, x0, args=args, jac=jac, bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 307, in _minimize_lbfgsb
+    sf = _prepare_scalar_function(fun, x0, jac=jac, args=args, epsilon=eps,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_optimize.py", line 383, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 158, in __init__
+    self._update_fun()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 251, in _update_fun
+    self._update_fun_impl()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 155, in update_fun
+    self.f = fun_wrapped(self.x)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 534, in f
+    return -self.loglike(params, *args) / nobs
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 939, in loglike
+    loglike = self.ssm.loglike(complex_step=complex_step, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 1001, in loglike
+    kfilter = self._filter(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 924, in _filter
+    kfilter()
+KeyboardInterrupt
+
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hcclear[?2004l
+[H[2J[3J[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h=====  = ====  =  ==== =  clear[?2004l
+[H[2J[3J[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hclearpython create_arima_model.py[?2004l
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: A date index has been provided, but it has no associated frequency information and so will be ignored when e.g. forecasting.
+  self._init_dates(dates, freq)
+^C^C^C^C^Cc^C^C^CTraceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 26, in <module>
+    model_fit = model.fit()
+                ^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/arima/model.py", line 395, in fit
+    res = super().fit(
+          ^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 704, in fit
+    mlefit = super(MLEModel, self).fit(start_params, method=method,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 566, in fit
+    xopt, retvals, optim_settings = optimizer._fit(f, score, start_params,
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 242, in _fit
+    xopt, retvals = func(objective, gradient, start_params, fargs, kwargs,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 659, in _fit_lbfgs
+    retvals = optimize.fmin_l_bfgs_b(func, start_params, maxiter=maxiter,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 199, in fmin_l_bfgs_b
+    res = _minimize_lbfgsb(fun, x0, args=args, jac=jac, bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 307, in _minimize_lbfgsb
+    sf = _prepare_scalar_function(fun, x0, jac=jac, args=args, epsilon=eps,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_optimize.py", line 383, in _prepare_scalar_function
+    sf = ScalarFunction(fun, x0, args, grad, hess,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 177, in __init__
+    self._update_grad()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 256, in _update_grad
+    self._update_grad_impl()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 173, in update_grad
+    self.g = approx_derivative(fun_wrapped, self.x, f0=self.f,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 505, in approx_derivative
+    return _dense_difference(fun_wrapped, x0, f0, h,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 576, in _dense_difference
+    df = fun(x) - f0
+         ^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 456, in fun_wrapped
+    f = np.atleast_1d(fun(x, *args, **kwargs))
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 534, in f
+    return -self.loglike(params, *args) / nobs
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 939, in loglike
+    loglike = self.ssm.loglike(complex_step=complex_step, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 1001, in loglike
+    kfilter = self._filter(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 924, in _filter
+    kfilter()
+KeyboardInterrupt
+
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+Traceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 17, in <module>
+    df.index = df['Timestamp'].to_period('S')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/pandas/core/series.py", line 5720, in to_period
+    raise TypeError(f"unsupported Type {type(self.index).__name__}")
+TypeError: unsupported Type Index
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+^C^C^CTraceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 28, in <module>
+    model_fit = model.fit()
+                ^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/arima/model.py", line 395, in fit
+    res = super().fit(
+          ^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 704, in fit
+    mlefit = super(MLEModel, self).fit(start_params, method=method,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 566, in fit
+    xopt, retvals, optim_settings = optimizer._fit(f, score, start_params,
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 242, in _fit
+    xopt, retvals = func(objective, gradient, start_params, fargs, kwargs,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 659, in _fit_lbfgs
+    retvals = optimize.fmin_l_bfgs_b(func, start_params, maxiter=maxiter,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 199, in fmin_l_bfgs_b
+    res = _minimize_lbfgsb(fun, x0, args=args, jac=jac, bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 365, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 286, in fun_and_grad
+    self._update_grad()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 256, in _update_grad
+    self._update_grad_impl()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 173, in update_grad
+    self.g = approx_derivative(fun_wrapped, self.x, f0=self.f,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 505, in approx_derivative
+    return _dense_difference(fun_wrapped, x0, f0, h,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 576, in _dense_difference
+    df = fun(x) - f0
+         ^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 456, in fun_wrapped
+    f = np.atleast_1d(fun(x, *args, **kwargs))
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 534, in f
+    return -self.loglike(params, *args) / nobs
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 939, in loglike
+    loglike = self.ssm.loglike(complex_step=complex_step, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 1001, in loglike
+    kfilter = self._filter(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 924, in _filter
+    kfilter()
+KeyboardInterrupt
+
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+^C^C^C^C^CTraceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 28, in <module>
+    model_fit = model.fit()
+                ^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/arima/model.py", line 395, in fit
+    res = super().fit(
+          ^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 704, in fit
+    mlefit = super(MLEModel, self).fit(start_params, method=method,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 566, in fit
+    xopt, retvals, optim_settings = optimizer._fit(f, score, start_params,
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 242, in _fit
+    xopt, retvals = func(objective, gradient, start_params, fargs, kwargs,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 659, in _fit_lbfgs
+    retvals = optimize.fmin_l_bfgs_b(func, start_params, maxiter=maxiter,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 199, in fmin_l_bfgs_b
+    res = _minimize_lbfgsb(fun, x0, args=args, jac=jac, bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 365, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 285, in fun_and_grad
+    self._update_fun()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 251, in _update_fun
+    self._update_fun_impl()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 155, in update_fun
+    self.f = fun_wrapped(self.x)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 534, in f
+    return -self.loglike(params, *args) / nobs
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 939, in loglike
+    loglike = self.ssm.loglike(complex_step=complex_step, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 1001, in loglike
+    kfilter = self._filter(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 924, in _filter
+    kfilter()
+KeyboardInterrupt
+
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+0
+1
+2
+3
+zsh: killed     python create_arima_model.py
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+0
+1
+2
+3
+4
+/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py:45: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  print(forecast[0])
+58777.17355723929
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[7m/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/[7ms[7mcripts/create_arima_model.py:45: FutureWarning: Series.__getitem__ treating keys as position[7ms[7m is deprecated. In a future version, integer keys will always be treated as labels (consiste[7mn[7mt with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`[27m[K[3A[58D[27m/[27mU[27ms[27me[27mr[27ms[27m/[27mb[27me[27mn[27mc[27mo[27mu[27ms[27me[27mr[27m/[27mD[27mo[27mc[27mu[27mm[27me[27mn[27mt[27ms[27m/[27mP[27mr[27mo[27mg[27mr[27ma[27mm[27mm[27mi[27mn[27mg[27m/[27mM[27ma[27mc[27mh[27mi[27mn[27me[27m [27mL[27me[27ma[27mr[27mn[27mi[27mn[27mg[27m/[27mb[27mi[27mt[27mc[27mo[27mi[27mn[27m-[27mp[27mr[27me[27md[27mi[27mc[27mt[27m/s[27mc[27mr[27mi[27mp[27mt[27ms[27m/[27mc[27mr[27me[27ma[27mt[27me[27m_[27ma[27mr[27mi[27mm[27ma[27m_[27mm[27mo[27md[27me[27ml[27m.[27mp[27my[27m:[27m4[27m5[27m:[27m [27mF[27mu[27mt[27mu[27mr[27me[27mW[27ma[27mr[27mn[27mi[27mn[27mg[27m:[27m [27mS[27me[27mr[27mi[27me[27ms[27m.[27m_[27m_[27mg[27me[27mt[27mi[27mt[27me[27mm[27m_[27m_[27m [27mt[27mr[27me[27ma[27mt[27mi[27mn[27mg[27m [27mk[27me[27my[27ms[27m [27ma[27ms[27m [27mp[27mo[27ms[27mi[27mt[27mi[27mo[27mns[27m [27mi[27ms[27m [27md[27me[27mp[27mr[27me[27mc[27ma[27mt[27me[27md[27m.[27m [27mI[27mn[27m [27ma[27m [27mf[27mu[27mt[27mu[27mr[27me[27m [27mv[27me[27mr[27ms[27mi[27mo[27mn[27m,[27m [27mi[27mn[27mt[27me[27mg[27me[27mr[27m [27mk[27me[27my[27ms[27m [27mw[27mi[27ml[27ml[27m [27ma[27ml[27mw[27ma[27my[27ms[27m [27mb[27me[27m [27mt[27mr[27me[27ma[27mt[27me[27md[27m [27ma[27ms[27m [27ml[27ma[27mb[27me[27ml[27ms[27m [27m([27mc[27mo[27mn[27ms[27mi[27ms[27mt[27men[27mt[27m [27mw[27mi[27mt[27mh[27m [27mD[27ma[27mt[27ma[27mF[27mr[27ma[27mm[27me[27m [27mb[27me[27mh[27ma[27mv[27mi[27mo[27mr[27m)[27m.[27m [27mT[27mo[27m [27ma[27mc[27mc[27me[27ms[27ms[27m [27ma[27m [27mv[27ma[27ml[27mu[27me[27m [27mb[27my[27m [27mp[27mo[27ms[27mi[27mt[27mi[27mo[27mn[27m,[27m [27mu[27ms[27me[27m [27m`[27ms[27me[27mr[27m.[27mi[27ml[27mo[27mc[27m[[27mp[27mo[27ms[27m][K                                        [?2004l
+zsh: no matches found: (consistent with DataFrame behavior).
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hppython create_arima_model.py[1m [0m[0m [?2004l
+Traceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 9, in <module>
+    from sklearn.preprocessing import train_test_split
+ImportError: cannot import name 'train_test_split' from 'sklearn.preprocessing' (/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/sklearn/preprocessing/__init__.py)
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+0
+1
+2
+3
+4
+/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py:46: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  print(forecast[0])
+58777.17355723929
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+0
+1
+2
+3
+4
+/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py:46: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  print(forecast[0])
+58777.17355723929
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hpython create_arima_model.py[?2004l
+0
+1
+2
+3
+^CTraceback (most recent call last):
+  File "/Users/bencouser/Documents/Programming/Machine Learning/bitcoin-predict/scripts/create_arima_model.py", line 37, in <module>
+    model_fit = model.fit()
+                ^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/arima/model.py", line 395, in fit
+    res = super().fit(
+          ^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 704, in fit
+    mlefit = super(MLEModel, self).fit(start_params, method=method,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 566, in fit
+    xopt, retvals, optim_settings = optimizer._fit(f, score, start_params,
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 242, in _fit
+    xopt, retvals = func(objective, gradient, start_params, fargs, kwargs,
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/optimizer.py", line 659, in _fit_lbfgs
+    retvals = optimize.fmin_l_bfgs_b(func, start_params, maxiter=maxiter,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 199, in fmin_l_bfgs_b
+    res = _minimize_lbfgsb(fun, x0, args=args, jac=jac, bounds=bounds,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_lbfgsb_py.py", line 365, in _minimize_lbfgsb
+    f, g = func_and_grad(x)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 286, in fun_and_grad
+    self._update_grad()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 256, in _update_grad
+    self._update_grad_impl()
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 173, in update_grad
+    self.g = approx_derivative(fun_wrapped, self.x, f0=self.f,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 505, in approx_derivative
+    return _dense_difference(fun_wrapped, x0, f0, h,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 576, in _dense_difference
+    df = fun(x) - f0
+         ^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_numdiff.py", line 456, in fun_wrapped
+    f = np.atleast_1d(fun(x, *args, **kwargs))
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/scipy/optimize/_differentiable_functions.py", line 137, in fun_wrapped
+    fx = fun(np.copy(x), *args)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/base/model.py", line 534, in f
+    return -self.loglike(params, *args) / nobs
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/mlemodel.py", line 939, in loglike
+    loglike = self.ssm.loglike(complex_step=complex_step, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 1001, in loglike
+    kfilter = self._filter(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bencouser/anaconda3/envs/myenv/lib/python3.11/site-packages/statsmodels/tsa/statespace/kalman_filter.py", line 924, in _filter
+    kfilter()
+KeyboardInterrupt
+
+[1m[7m%[27m[1m[0m                                                                                             [0m[27m[24m[J(myenv) [32m[[00m [31mscripts[00m [32m][00m$[0m [K[?2004hppython i 0 -i create_arima_model.py[1m [0m[0m [?2004l
+0
+1
+2
+3
+4
+361377
+>>> print(forecastp[K[9[K9[K0])
+<stdin>:1: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+58777.17355723929
+>>> f[Kprint(forecast.iloc[0])
+58777.17355723929
+>>> for i in range(5):
+...     print(forecast.lo[K[Kiloc[0[Ki])
+...     print(test.iloc[i[[K[][K[K]_[K)
+... 
+58777.17355723929
+Close    9181.52
+Name: 2020-07-21 05:10:00, dtype: float64
+58776.948964714036
+Close    9182.17
+Name: 2020-07-21 05:11:00, dtype: float64
+58776.532167516845
+Close    9185.18
+Name: 2020-07-21 05:12:00, dtype: float64
+58777.24234992125
+Close    9185.74
+Name: 2020-07-21 05:13:00, dtype: float64
+58776.07496225312
+Close    9182.44
+Name: 2020-07-21 05:14:00, dtype: float64
+>>> 
